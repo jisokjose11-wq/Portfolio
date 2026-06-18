@@ -1,0 +1,197 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin-bottom:10px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+/* About Section */
+
+.about{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:60px 10%;
+    background:white;
+}
+
+.about-text{
+    width:60%;
+}
+
+.about-text h2{
+    margin-bottom:15px;
+    color:#1e3a8a;
+}
+
+.about-text p{
+    margin-bottom:15px;
+}
+
+.about-text button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.about-image img{
+    width:250px;
+    height:250px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* Titles */
+
+.title{
+    text-align:center;
+    color:#1e3a8a;
+    margin-bottom:30px;
+}
+
+/* Projects */
+
+#projects{
+    padding:60px 20px;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.card h3{
+    color:#1e3a8a;
+    margin-bottom:10px;
+}
+
+/* Skills */
+
+#skills{
+    padding:60px 20px;
+    background:white;
+}
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.skill-box{
+    background:#1e3a8a;
+    color:white;
+    padding:15px 30px;
+    border-radius:25px;
+    font-weight:bold;
+}
+
+/* Contact */
+
+#contact{
+    padding:60px 20px;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    height:120px;
+}
+
+form button{
+    background:#1e3a8a;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Footer */
+
+footer{
+    background:#1e3a8a;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    .about{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .about-text{
+        width:100%;
+        margin-bottom:20px;
+    }
+
+    .about-image img{
+        width:200px;
+        height:200px;
+    }
+}
